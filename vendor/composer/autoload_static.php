@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit228885af06a1619ec131f532cc07ccdb
+class ComposerStaticInitcda9a5382486ba56d01c1b30a547fd4e
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -5729,13 +5729,11 @@ class ComposerStaticInit228885af06a1619ec131f532cc07ccdb
         'Symfony\\Component\\CssSelector\\Node\\ElementNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/ElementNode.php',
         'Symfony\\Component\\CssSelector\\Node\\FunctionNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/FunctionNode.php',
         'Symfony\\Component\\CssSelector\\Node\\HashNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/HashNode.php',
-        'Symfony\\Component\\CssSelector\\Node\\MatchingNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/MatchingNode.php',
         'Symfony\\Component\\CssSelector\\Node\\NegationNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/NegationNode.php',
         'Symfony\\Component\\CssSelector\\Node\\NodeInterface' => __DIR__ . '/..' . '/symfony/css-selector/Node/NodeInterface.php',
         'Symfony\\Component\\CssSelector\\Node\\PseudoNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/PseudoNode.php',
         'Symfony\\Component\\CssSelector\\Node\\SelectorNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/SelectorNode.php',
         'Symfony\\Component\\CssSelector\\Node\\Specificity' => __DIR__ . '/..' . '/symfony/css-selector/Node/Specificity.php',
-        'Symfony\\Component\\CssSelector\\Node\\SpecificityAdjustmentNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/SpecificityAdjustmentNode.php',
         'Symfony\\Component\\CssSelector\\Parser\\Handler\\CommentHandler' => __DIR__ . '/..' . '/symfony/css-selector/Parser/Handler/CommentHandler.php',
         'Symfony\\Component\\CssSelector\\Parser\\Handler\\HandlerInterface' => __DIR__ . '/..' . '/symfony/css-selector/Parser/Handler/HandlerInterface.php',
         'Symfony\\Component\\CssSelector\\Parser\\Handler\\HashHandler' => __DIR__ . '/..' . '/symfony/css-selector/Parser/Handler/HashHandler.php',
@@ -6324,11 +6322,9 @@ class ComposerStaticInit228885af06a1619ec131f532cc07ccdb
         'Symfony\\Component\\String\\Inflector\\EnglishInflector' => __DIR__ . '/..' . '/symfony/string/Inflector/EnglishInflector.php',
         'Symfony\\Component\\String\\Inflector\\FrenchInflector' => __DIR__ . '/..' . '/symfony/string/Inflector/FrenchInflector.php',
         'Symfony\\Component\\String\\Inflector\\InflectorInterface' => __DIR__ . '/..' . '/symfony/string/Inflector/InflectorInterface.php',
-        'Symfony\\Component\\String\\Inflector\\SpanishInflector' => __DIR__ . '/..' . '/symfony/string/Inflector/SpanishInflector.php',
         'Symfony\\Component\\String\\LazyString' => __DIR__ . '/..' . '/symfony/string/LazyString.php',
         'Symfony\\Component\\String\\Slugger\\AsciiSlugger' => __DIR__ . '/..' . '/symfony/string/Slugger/AsciiSlugger.php',
         'Symfony\\Component\\String\\Slugger\\SluggerInterface' => __DIR__ . '/..' . '/symfony/string/Slugger/SluggerInterface.php',
-        'Symfony\\Component\\String\\TruncateMode' => __DIR__ . '/..' . '/symfony/string/TruncateMode.php',
         'Symfony\\Component\\String\\UnicodeString' => __DIR__ . '/..' . '/symfony/string/UnicodeString.php',
         'Symfony\\Component\\Translation\\CatalogueMetadataAwareInterface' => __DIR__ . '/..' . '/symfony/translation/CatalogueMetadataAwareInterface.php',
         'Symfony\\Component\\Translation\\Catalogue\\AbstractOperation' => __DIR__ . '/..' . '/symfony/translation/Catalogue/AbstractOperation.php',
@@ -6641,9 +6637,9 @@ class ComposerStaticInit228885af06a1619ec131f532cc07ccdb
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit228885af06a1619ec131f532cc07ccdb::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit228885af06a1619ec131f532cc07ccdb::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit228885af06a1619ec131f532cc07ccdb::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcda9a5382486ba56d01c1b30a547fd4e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcda9a5382486ba56d01c1b30a547fd4e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitcda9a5382486ba56d01c1b30a547fd4e::$classMap;
 
         }, null, ClassLoader::class);
     }
