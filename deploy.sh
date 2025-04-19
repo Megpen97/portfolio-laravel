@@ -61,30 +61,44 @@ echo "🛠️ Installing Node.js dependencies and building assets..."
 npm ci
 npm run build
 
-# Clear Laravel caches
-echo "🧹 Clearing Laravel caches..."
-php artisan cache:clear
-php artisan config:clear
-php artisan route:clear
-php artisan view:clear
+# Create storage directory structure
+echo "📁 Creating storage directories..."
+mkdir -p storage/app/public
+mkdir -p storage/framework/cache
+mkdir -p storage/framework/sessions
+mkdir -p storage/framework/views
+mkdir -p storage/logs
+mkdir -p bootstrap/cache
 
-# Optimize Laravel
-echo "⚡ Optimizing Laravel..."
+# Set directory permissions
+echo "🔒 Setting permissions..."
+chmod -R 755 storage bootstrap/cache
+chmod -R 755 public
+find storage -type d -exec chmod 775 {} \;
+find storage -type f -exec chmod 664 {} \;
+
+# Create storage link
+echo "🔗 Creating storage link..."
+php artisan storage:link
+
+# Clear all caches
+echo "🧹 Clearing caches..."
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear
+php artisan route:clear
+
+# Optimize
+echo "⚡ Optimizing..."
 php artisan optimize
 
 # Run database migrations
 echo "🗄️ Running database migrations..."
 php artisan migrate --force
 
-# Set proper permissions
-echo "🔒 Setting proper permissions..."
-chmod -R 755 .
-chmod -R 775 storage bootstrap/cache
-chmod -R 775 public
-find storage -type d -exec chmod 775 {} \;
-find storage -type f -exec chmod 664 {} \;
-
-# Create storage link if it doesn't exist
-php artisan storage:link
-
-echo "✅ Deployment completed successfully!" 
+echo "✅ Deployment completed successfully!"
+echo ""
+echo "📝 Next steps:"
+echo "1. Configure your .env file with your database credentials"
+echo "2. Run: php artisan key:generate"
+echo "3. Run: php artisan migrate" 
