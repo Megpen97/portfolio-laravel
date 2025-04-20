@@ -3,7 +3,7 @@
         'name' => 'megpen97/portfolio',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'a23b3557086be5c47e32edba5e170b91bcdf9c7a',
+        'reference' => 'ac99e4660b4a38a4b178623a4e0a4e563dab6062',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -481,7 +481,7 @@
         'megpen97/portfolio' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'a23b3557086be5c47e32edba5e170b91bcdf9c7a',
+            'reference' => 'ac99e4660b4a38a4b178623a4e0a4e563dab6062',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
